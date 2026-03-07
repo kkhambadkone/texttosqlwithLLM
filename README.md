@@ -195,13 +195,15 @@ ollama run llama3
   "there are two tables employees with columns employeeid, name, departmentid, salary and departments with columns departmentid, name Don’t show all the employees for each department but only the highest paid employee for each department output should have employeeid, name, department and salary"
 
 ##  It should output the following:
-  Generated SQL:
+### Generated SQL:
  SELECT e.employeeid, e.name, d.name AS department, e.salary FROM employees e JOIN departments d ON e.departmentid = d.departmentid WHERE (e.departmentid, e.salary) IN (SELECT departmentid, MAX(salary) FROM employees GROUP BY departmentid)
-['employeeid', 'name', 'department', 'salary']
-(7, 'Grace Wilson', 'Human Resources', 77000.0)
-(8, 'Henry Moore', 'Finance', 69000.0)
-(9, 'Ivy Taylor', 'Engineering', 83000.0)
-(10, 'Jack Anderson', 'Sales', 74000.0)
+
+### Output:
+    ['employeeid', 'name', 'department', 'salary']
+    (7, 'Grace Wilson', 'Human Resources', 77000.0)
+    (8, 'Henry Moore', 'Finance', 69000.0)
+    (9, 'Ivy Taylor', 'Engineering', 83000.0)
+    (10, 'Jack Anderson', 'Sales', 74000.0)
 
 ------------------------------------------------------------------------
 
