@@ -1,6 +1,5 @@
 # Text-to-SQL Example using Llama3 and SQLite
 
-![Text to SQL Workflow](text_to_sql_workflow.png)
 
 ## Overview
 
