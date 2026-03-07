@@ -169,11 +169,19 @@ Pull the Llama3 model:
 ollama pull llama3
 ```
 
-Run the model:
+List the models:
+
+ollama list
+
+Run the model in interactive mode:
 
 ``` bash
 ollama run llama3
 ```
+
+Run the process in the background to accept API requests (for this example):
+
+nohup ollama serve > ollama.out 2>&1 &
 
 ------------------------------------------------------------------------
 
