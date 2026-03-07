@@ -188,11 +188,10 @@ nohup ollama serve > ollama.out 2>&1 &
 # Example Natural Language Queries:
 
    Question                        SQL
-   ------------------------------- -------------------------------------------------
+
    Show all employees              SELECT \* FROM employees
    Employees in Sales              SELECT \* FROM employees WHERE departmentid=102
    Average salary per department   GROUP BY department
-   ------------------------------------------------------------------------
 
 # Run the python script 
 
