@@ -185,9 +185,9 @@ nohup ollama serve > ollama.out 2>&1 &
 
 ------------------------------------------------------------------------
 
-# Example Natural Language Queries
+# Example Natural Language Queries:
 
-## Question                        SQL
+   Question                        SQL
    ------------------------------- -------------------------------------------------
    Show all employees              SELECT \* FROM employees
    Employees in Sales              SELECT \* FROM employees WHERE departmentid=102
