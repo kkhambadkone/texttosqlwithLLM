@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
         sql = generate_sql_with_retry(user_text)
         print("Generated SQL:\n", sql)
-        cols, rows = run_sql_query("example.db", sql)
+        cols, rows = run_sql_query("company.db", sql)
 
         print(cols)
         for r in rows:
