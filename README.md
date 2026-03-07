@@ -5,7 +5,7 @@
 
 This project demonstrates a **Text → LLM → SQL → SQLite** workflow where
 a natural language query is converted into a SQL query using an LLM and
-executed against a SQLite database.
+executed against a SQLite database.  I ran this entire project on my MAC OS Sonoma 14.3.1 
 
 The LLM used in this example is **Llama3**, running locally using
 **Ollama**.
