@@ -31,9 +31,22 @@ SELECT * FROM employees WHERE departmentid = 102;
 
 # Architecture
 
-Text Input → Llama3 (LLM) → SQL Query Generation → SQLite Database →
-Results
 
+```
+[Text Input] 
+      |
+      v
+[Llama3 (LLM)] 
+      |
+      v
+[SQL Query Generation]
+      |
+      v
+[SQLite Database]
+      |
+      v
+[Results]
+```
 ------------------------------------------------------------------------
 
 # Database Schema
