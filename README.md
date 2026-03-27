@@ -115,18 +115,18 @@ INSERT INTO departments VALUES
 
 # Example SQL Queries
 
-### Employees with Department Name
+### User query: give me list of Employees with Department Name
 
-``` sql
+``` generated sql
 SELECT e.employeeid, e.name, d.name AS department, e.salary
 FROM employees e
 JOIN departments d
 ON e.departmentid = d.departmentid;
 ```
 
-### Average Salary per Department
+### User query: give me Average Salary per Department
 
-``` sql
+``` generated sql
 SELECT d.name, AVG(e.salary) AS avg_salary
 FROM employees e
 JOIN departments d
