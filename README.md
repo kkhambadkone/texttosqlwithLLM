@@ -117,6 +117,7 @@ INSERT INTO departments VALUES
 
 ### User query: give me list of Employees with Department Name
 
+### Generated SQL:
 ``` generated sql
 SELECT e.employeeid, e.name, d.name AS department, e.salary
 FROM employees e
@@ -126,6 +127,7 @@ ON e.departmentid = d.departmentid;
 
 ### User query: give me Average Salary per Department
 
+### Generated SQL:
 ``` generated sql
 SELECT d.name, AVG(e.salary) AS avg_salary
 FROM employees e
